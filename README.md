@@ -34,7 +34,7 @@ Each time, the result of the shortest path can not be the same.
   
   The "crossover" step finished.
   
-- We build a 5% probability to generate the DNA mutation situation.
-  For each babyDNA, each node have 5% probability randomly swap with the later node.
+- We build a 5% probability randomly adding the DNA mutation situation.
+  For each babyDNA, each vertex exists a probability of 5% to randomly swap with a later vertex.
   That is the final step to generate a BabyDNA (They will be sorted and only 200 shortest one can be chosen)
  

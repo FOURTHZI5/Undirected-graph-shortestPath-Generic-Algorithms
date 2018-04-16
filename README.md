@@ -4,9 +4,9 @@ Undirected graph shortestPath Generic Algorithms
 This is a program monitor the salesman shortest-path problem using genetic algorithms.
 A salesman must go from one city and then the remaining cities, finally come back to the original city.
 During the whole process, the salesman can only reach each city once.
-The Aim of the problem is to find the comparablly shortest path of the map.
+The Aim of the problem is to find the comparably shortest path of the map.
 
-In our project, the number of node of the map can be choose but the coordinate of each node is generated randomly.
+In our project, the number of vertex of the map can be choose but the coordinate of each node is generated randomly.
 Each time, the result of the shortest path can not be the same.
 
 ----------------------------------------------------------------------------------------------------------------
@@ -21,8 +21,8 @@ Each time, the result of the shortest path can not be the same.
 
 "DNA" part
 - in each "RouteGene", the DNA is stored as an simple list.
-  - if there are 10 verticle in the map, the DNA will be stored like [3, 7, 2, 8, 5, 4, 9, 6, 1, 0], that means the salesman       will come first come the city "3", then go to city "7", then to "2" ... to "0" , and finally back to "3";
-  - each DNA was generated from two differnt parents, for example, the babyDNA can generted from the two previous DNA :
+  - if there are 10 vertex in the map, the DNA will be stored like [3, 7, 2, 8, 5, 4, 9, 6, 1, 0], that means the salesman       will come first come the city "3", then go to city "7", then to "2" ... to "0" , and finally back to "3";
+  - each DNA was generated from two differnt parents, for example, the babyDNA can generated from the two previous DNA :
     DadDNA: [9, 7, 2, 8, 3, 4, 5, 1, 6, 0]    &    MomDNA: [0, 2, 9, 7, 5, 4, 1, 3, 8, 6]
     We can catch the five elements from DadDNA to build the BabyDNA: [ ,  , 2, 8, 3, 4, 5,  ,  ,  ]
     Then catch other DNA from MomDNA and the BabyDNA look like this: [0,  , 2, 8, 3, 4, 5,  ,  ,6 ]
